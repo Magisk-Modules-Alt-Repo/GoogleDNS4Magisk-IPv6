@@ -34,6 +34,6 @@ resetprop -n 2a10:50c0::ad2:ff
 
 if [ -a /system/etc/resolv.conf ]; then
 	mkdir -p $MODDIR/system/etc/
-	printf "nameserver 1.1.1.1\nnameserver 1.0.0.1" >> $MODDIR/system/etc/resolv.conf
+	printf "nameserver 8.8.8.8\nnameserver 8.8.4.4" >> $MODDIR/system/etc/resolv.conf
 	chmod 644 $MODDIR/system/etc/resolv.conf
 fi
